@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Paste 1688.com Product Link</h2>
+<form method="post">
+  {% csrf_token %}
+  <div class="form-group">
+    <input type="url" name="link" class="form-control" placeholder="Paste 1688 product URL" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Fetch Product</button>
+</form>
+
+{% if product %}
+  <hr>
+  <h4>{{ product.title }}</h4>
+  <img src="{{ product.image }}" width="200">
+  <p><strong>Price (CNY):</strong> {{ product.price }}</p>
+  <p><strong>Price (NGN):</strong> ₦{{ product.naira_price }}</p>
+{% endif %}
+{% endblock %}
