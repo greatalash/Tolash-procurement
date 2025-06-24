@@ -5,6 +5,9 @@ from bs4 import BeautifulSoup
 def landing(request):
     return render(request, 'landing.html')
 
+def about(request):
+    return render(request, 'company.html')
+
 
 
 def home(request):

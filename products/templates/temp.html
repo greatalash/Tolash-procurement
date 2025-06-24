@@ -18,7 +18,8 @@
     <div class="collapse navbar-collapse w-75 menu" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Company</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'company' %}">Company</a>
+
         </li>
         
         
@@ -34,7 +35,7 @@
         </li>
       </ul>
       <div class="d-flex" >
-        <a link=""> Login </a>
+        <a link="{% url 'login' %}"> Login </a>
         <button class="btn btn-outline-success" type="button">Get Started</button>
       </div>
     </div>
