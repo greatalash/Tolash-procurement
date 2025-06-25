@@ -9,6 +9,12 @@
 .carousel-item {
     position: relative;
 }
+.loggin{
+    text-decoration: none;
+    color: #100a0a;
+
+}
+
 .carousel-item img {
     height: 500px;
     object-fit: cover;
@@ -54,8 +60,8 @@ footer a:hover {
     transform: translateY(-30px);
   }
 }
- <>
-    body {
+
+body {
       background-color: #0d0d0d;
       color: white;
     }
@@ -87,4 +93,77 @@ footer a:hover {
 
     .btn-demo:hover {
       background-color: #f5f5f5;
+    }
+    /* Highlight the recommended plan */
+.highlight {
+  border-top: 4px solid #ffc107;
+}
+
+/* Card layout */
+.plan-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.plan-title {
+  font-weight: 700;
+}
+
+/* Button styling */
+.btn-black {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.btn-black:hover {
+  background-color: #333;
+}
+
+/* Custom star style */
+.star {
+  color: #ffc107;
+  font-size: 1.2em;
+}
+
+/* List styling */
+ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+ .highlight {
+      border-top: 3px solid #ffc107;
+    }
+    .plan-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 25px;
+      transition: box-shadow 0.3s ease;
+    }
+    .plan-card:hover {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .plan-title {
+      font-weight: 700;
+    }
+    .btn-black {
+      background-color: black;
+      color: white;
+    }
+    .btn-black:hover {
+      background-color: #333;
+    }
+    .star {
+      color: #ffc107;
+    }
+    ul li {
+      margin-bottom: 10px;
     }

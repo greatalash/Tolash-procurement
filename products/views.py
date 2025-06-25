@@ -8,6 +8,8 @@ def landing(request):
 def about(request):
     return render(request, 'company.html')
 
+def pricing(request):
+    return render(request, 'pricing.html')
 
 
 def home(request):

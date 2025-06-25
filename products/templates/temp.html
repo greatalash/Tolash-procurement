@@ -27,7 +27,7 @@
           <a class="nav-link " href="#">Product</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link " href="#">Pricing</a>
+          <a class="nav-link " href="{% url 'pricing' %}">Pricing</a>
         </li>
 
          <li class="nav-item">
@@ -35,8 +35,8 @@
         </li>
       </ul>
       <div class="d-flex" >
-        <a link="{% url 'login' %}"> Login </a>
-        <button class="btn btn-outline-success" type="button">Get Started</button>
+        <a class="loggin btn btn-outline-info" href="{% url 'login' %}" > Login </a>
+        <a class="btn btn-outline-success" href="{% url 'signup' %}">Get Started</a>
       </div>
     </div>
   </div>
